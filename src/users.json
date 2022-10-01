@@ -1,0 +1,56 @@
+"users": [
+  {
+    "id": 1,
+    "name": "Ronald Richards",
+    "designation": "Project Manager",
+    "department": "Design Team",
+    "hired-date": "17/03/2021",
+    "email": "test@gmail.com",
+    "phone": "1-102-555-0129"
+  },
+  {
+    "id": 2,
+    "name": "Ronald Richards",
+    "designation": "Project Manager",
+    "department": "Design Team",
+    "hired-date": "17/03/2021",
+    "email": "test@gmail.com",
+    "phone": "1-102-555-0129"
+  },
+  {
+    "id": 3,
+    "name": "Ronald Richards",
+    "designation": "Project Manager",
+    "department": "Design Team",
+    "hired-date": "17/03/2021",
+    "email": "test@gmail.com",
+    "phone": "1-102-555-0129"
+  },
+  {
+    "id": 4,
+    "name": "Ronald Richards",
+    "designation": "Project Manager",
+    "department": "Design Team",
+    "hired-date": "17/03/2021",
+    "email": "test@gmail.com",
+    "phone": "1-102-555-0129"
+  },
+  {
+    "id": 5,
+    "name": "Ronald Richards",
+    "designation": "Project Manager",
+    "department": "Design Team",
+    "hired-date": "17/03/2021",
+    "email": "test@gmail.com",
+    "phone": "1-102-555-0129"
+  },
+  {
+    "id": 6,
+    "name": "Ronald Richards",
+    "designation": "Project Manager",
+    "department": "Design Team",
+    "hired-date": "17/03/2021",
+    "email": "test@gmail.com",
+    "phone": "1-102-555-0129"
+  }
+]

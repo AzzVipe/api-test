@@ -8,7 +8,7 @@
       <p>{{tempData.District}}</p>
       <p>{{tempData.State}}</p>  
 
-      <iframe src="https://www.google.com/maps/embed?pb=Kankinara,+West+Bengal" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=Kankinara,+West+Bengal" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   -->
     </div>
   </div>  
 </template>

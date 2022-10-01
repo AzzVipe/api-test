@@ -1,113 +1,18 @@
 <template>
-  <main>
-    <div class="header">
-      <label>
-        <input type="num" v-model="pincode" placeholder="Pincode...">
-      </label>
-      <button class="btn-search" @click="fetchData()">Search</button>
-    </div>
-    <section>
-      <div class="container">
-          <PostOffice 
-            v-for="(temp, index) in postOffices"
-            :key="index" 
-            :temp-data="temp"/>  
-      </div>
-    </section>
-  </main>
+
+  <router-view></router-view>
+
 </template>
 
 <script>
-import PostOffice from './components/PostOffice.vue'
 
 export default {
   name: 'App',
-
   components: {
-    PostOffice
-  },
-
-  data() {
-    return {
-      postOffices: [],
-      pincode: "",
-    }
-  },
-
-  methods: {
-    fetchData() {
-      const api = `https://api.postalpincode.in/pincode/${this.pincode}`;
-      fetch(api)
-       .then(res => res.json())
-       .then(temp => {
-          this.postOffices = temp[0].PostOffice;
-          console.log(this.postOffices[0]);
-        });
-    },
-  },
+  }
 }
 </script>
 
 <style>
-
-#app {
-  font-family: "Poppins", sans-serif;
-}
-
-body {  
-  min-height: 100vh;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-section {
-  flex-grow: 1;
-  background-color: #D9D9D9;
-  padding: 2rem 1.5rem;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  font-size: 1.3rem;
-  gap: 1rem;
-  padding: 40px 200px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  grid-gap: 1rem;
-}
-
-.header input {
-  padding: 1rem;
-  border-radius: 6px;
-  background-color: #D9D9D9;
-  letter-spacing: 1.5px;
-  color: #3A3030;
-}
-
-.header input::placeholder {
-  color: rgba(58 48 48 .6);
-}
-
-.header .btn-search {
-  padding: 1rem 1.5rem;
-  font-weight: 700;
-  border-radius: 6px;
-  color: #3A3030;
-  background-color: #D9D9D9;
-}
-
-.header button:hover {
-  background-color: #3A3030;
-  color: white;
-}
-
 
 </style>
