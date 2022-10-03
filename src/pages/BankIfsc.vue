@@ -1,6 +1,6 @@
 <template>
-	<div class="container flex-column">
-		<div class="header">
+	<div class="container">
+		<div class="header grid grid-nogutter">
 			<span class="p-float-label">
 				<InputText v-on:keyup.enter="fetchData" class="p-inputtext-sm" id="bankifsc" type="text" v-model="ifsccode" />
 				<label for="bankifsc">Bank IFSC</label>
@@ -13,11 +13,11 @@
 				<p>Total {{ branchData.length }} Branches </p>
 			</template>
 			<TableColumn selectionMode="multiple" style="width: 3rem" :exportable="false"></TableColumn>
-			<TableColumn :sortable="true" field="BRANCH" header="Branch" style="min-width:16rem"></TableColumn>
-			<TableColumn :sortable="true" field="CENTRE" header="Centre" style="min-width:16rem"></TableColumn>
-			<TableColumn :sortable="true" field="DISTRICT" header="District" style="min-width:16rem"></TableColumn>
-			<TableColumn :sortable="true" field="STATE" header="State" style="min-width:16rem"></TableColumn>
-			<TableColumn :sortable="true" field="CONTACT" header="Contact" style="min-width:16rem"></TableColumn>
+			<TableColumn :sortable="true" field="BRANCH" header="Branch" style="min-width:14rem"></TableColumn>
+			<TableColumn :sortable="true" field="CENTRE" header="Centre" style="min-width:14rem"></TableColumn>
+			<TableColumn :sortable="true" field="DISTRICT" header="District" style="min-width:14rem"></TableColumn>
+			<TableColumn :sortable="true" field="STATE" header="State" style="min-width:14rem"></TableColumn>
+			<TableColumn :sortable="true" field="CONTACT" header="Contact" style="min-width:14rem"></TableColumn>
 		</DataTable>
 	</div>
 </template>

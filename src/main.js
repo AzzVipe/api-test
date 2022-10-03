@@ -14,7 +14,7 @@ import DiviDer from 'primevue/divider';
 import 'primevue/resources/themes/md-dark-deeppurple/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
-import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.css';
 
 const app = createApp(App);
 

@@ -1,6 +1,6 @@
 <template>
-  <div class="container flex-column">
-    <div class="header">
+  <div class="container">
+    <div class="header grid grid-nogutter">
       <span class="p-float-label">
         <InputText v-on:keyup.enter="fetchData" class="p-inputtext-sm" id="pincode" type="text" v-model="pincode" />
         <label for="pincode">Pincode</label>
@@ -13,11 +13,11 @@
         <p>Total {{ postOffices.length }} Postoffices </p>
       </template>
       <TableColumn selectionMode="multiple" style="width: 3rem" :exportable="false"></TableColumn>
-      <TableColumn :sortable="true" field="Name" header="Name" style="min-width:16rem"></TableColumn>
-      <TableColumn :sortable="true" field="BranchType" header="Branch Type" style="min-width:16rem"></TableColumn>
-      <TableColumn :sortable="true" field="Circle" header="Circle" style="min-width:16rem"></TableColumn>
-      <TableColumn :sortable="true" field="District" header="District" style="min-width:16rem"></TableColumn>
-      <TableColumn :sortable="true" field="Division" header="Division" style="min-width:16rem"></TableColumn>
+      <TableColumn :sortable="true" field="Name" header="Name" style="min-width:14rem"></TableColumn>
+      <TableColumn :sortable="true" field="BranchType" header="Branch Type" style="min-width:14rem"></TableColumn>
+      <TableColumn :sortable="true" field="Circle" header="Circle" style="min-width:14rem"></TableColumn>
+      <TableColumn :sortable="true" field="District" header="District" style="min-width:14rem"></TableColumn>
+      <TableColumn :sortable="true" field="Division" header="Division" style="min-width:14rem"></TableColumn>
     </DataTable>
   </div>
 </template>
